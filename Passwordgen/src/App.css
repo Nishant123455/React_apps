@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@layer components {
+  .btn-primary {
+    
+    background-color: var(--color-blue-400);
+    padding-inline: --spacing(5);
+    padding-block: --spacing(2);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+    outline: none;
+    
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-700);
+      }
+    }
+  }
+}
